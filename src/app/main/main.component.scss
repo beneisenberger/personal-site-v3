@@ -1,0 +1,38 @@
+@import "../../styles/colors";
+
+.container {
+  padding: 4%;
+  background: url("../../assets/images/titleimage-4.jpg");
+  background-size: cover;
+  background-position-y: -200px;
+  min-height: 40vh;
+  img {
+    height: 100px;
+  }
+
+  @media (max-width: 580px) {
+    img {
+      height: 70px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    background-size: 250%;
+    background-position-x: -315px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    background-size: 420%;
+    background-position-x: -315px;
+  }
+}

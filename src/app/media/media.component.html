@@ -1,0 +1,5 @@
+<div fxLayout="column">
+  <h2 style="text-align: center;">Discography</h2>
+  <ng-image-slider #nav [images]="imageObject" [imagePopup]="false" [imageSize]="imageSize" [animationSpeed]="0.1"
+    [slideImage]="2" (imageClick)="onImageClick($event)"></ng-image-slider>
+</div>

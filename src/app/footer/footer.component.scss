@@ -1,0 +1,18 @@
+@import "../../styles/colors";
+
+.container {
+  color: $light;
+  background: $dark;
+  padding: 6%;
+}
+
+p {
+  font-size: 12px;
+}
+
+.icon-container {
+  img {
+    height: 40px;
+    margin: 12px;
+  }
+}

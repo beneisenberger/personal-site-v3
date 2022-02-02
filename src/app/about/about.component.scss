@@ -1,0 +1,30 @@
+@import "../../styles/colors";
+
+.container {
+  background: $dark;
+  color: $light;
+  padding: 16px;
+
+  div {
+    padding: 24px 6%;
+  }
+}
+
+h2 {
+  color: $accent;
+}
+
+.logo {
+  max-height: 60px;
+}
+
+.form-container {
+  div {
+    padding: 12px;
+  }
+
+  input {
+    height: 24px;
+    width: 100%;
+  }
+}

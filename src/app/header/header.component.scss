@@ -1,0 +1,20 @@
+@import "../../styles/colors";
+
+.container {
+  padding: 12px;
+  background-color: $dark;
+  color: $accent;
+}
+
+h2 {
+  margin: 0 !important;
+}
+
+.header-social-container {
+  margin: 0 12px;
+
+  img {
+    height: 30px;
+    margin: 4px 8px;
+  }
+}

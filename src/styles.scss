@@ -1,1 +1,220 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/theming";
+@include mat-core();
+@import "./styles/colors";
+
+// ~* ~* ~* ~* ~* ~* ~* THEME ~* ~* ~* ~* ~* ~* ~* //
+
+$md-primary: (
+  50: #e3e7ec,
+  100: #bac2cf,
+  200: #8c9aaf,
+  300: #5d718e,
+  400: #3b5276,
+  500: #18345e,
+  600: #152f56,
+  700: #11274c,
+  800: #0e2142,
+  900: #081531,
+  A100: #6b90ff,
+  A200: #386aff,
+  A400: #0544ff,
+  A700: #003beb,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$md-accent: (
+  50: #fefae4,
+  100: #fcf3bb,
+  200: #faec8e,
+  300: #f8e461,
+  400: #f7de3f,
+  500: #f5d81d,
+  600: #f4d41a,
+  700: #f2ce15,
+  800: #f0c811,
+  900: #eebf0a,
+  A100: #ffffff,
+  A200: #fff9e4,
+  A400: #ffedb1,
+  A700: #ffe797,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$primary: mat-palette($md-primary, 500);
+$accent: mat-palette($md-accent, 500);
+$dark: #1c1c1c;
+$light: #f1f2f2;
+$light2: #f2f2f2;
+
+$theme: mat-light-theme($primary, $accent);
+
+@include angular-material-theme($theme);
+
+// ~* ~* ~* ~* ~* ~* ~* FONTS ~* ~* ~* ~* ~* ~* ~* //
+
+@font-face {
+  font-family: accidental;
+  src: url("../src/assets/fonts/accidental_presiden/accid___.ttf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: bebas-kai;
+  src: url("../src/assets/fonts/bebas_kai/BebasKai.otf") format("opentype");
+}
+
+@font-face {
+  font-family: bitcrusher;
+  src: url("../src/assets/fonts/bitcrusher/bitcrusher-condensed-bd.ttf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: florencesans;
+  src: url("../src/assets/fonts/florencesans/Florsn46.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: gravity;
+  src: url("../src/assets/fonts/gravity/Gravity-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: kiona;
+  src: url("../src/assets/fonts/kiona_2/Kiona-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: libel-suit;
+  src: url("../src/assets/fonts/libel_suit/libel-suit-rg.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: next-art;
+  src: url("../src/assets/fonts/next_art/NEXT\ ART_Regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: steelfish;
+  src: url("../src/assets/fonts/steelfish/steelfish\ rg.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url("../src/assets/fonts/OpenSans/OpenSans-Regular.ttf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: open-sans-light;
+  src: url("../src/assets/fonts/OpenSans/OpenSans-Light.ttf") format("opentype");
+}
+
+// ~* ~* ~* ~* ~* ~* ~* CSS ~* ~* ~* ~* ~* ~* ~* //
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.mat-raised-button {
+  border-radius: 4px !important;
+  padding: 0 30px !important;
+  font-family: bebas-kai, sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: bebas-kai, sans-serif !important;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-bottom: 36px !important;
+  font-size: 72px !important;
+}
+
+h2 {
+  font-size: 48px !important;
+}
+
+h3 {
+  font-size: 24px !important;
+}
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 48px !important;
+  }
+
+  h2 {
+    font-size: 30px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 12px !important;
+  }
+}
+
+p {
+  font-family: open-sans-light, sans-serif !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.mat-dialog-container {
+  padding: 0 !important;
+  border-radius: 24px !important;
+}
